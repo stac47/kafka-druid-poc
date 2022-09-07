@@ -1,0 +1,44 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.1.10)
+    digest-crc (0.6.4)
+      rake (>= 12.0.0, < 14.0.0)
+    dry-container (0.10.1)
+      concurrent-ruby (~> 1.0)
+    dry-core (0.8.1)
+      concurrent-ruby (~> 1.0)
+    dry-inflector (0.3.0)
+    dry-logic (1.2.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.5, >= 0.5)
+    dry-struct (1.4.0)
+      dry-core (~> 0.5, >= 0.5)
+      dry-types (~> 1.5)
+      ice_nine (~> 0.11)
+    dry-types (1.5.1)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.3)
+      dry-core (~> 0.5, >= 0.5)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-logic (~> 1.0, >= 1.0.2)
+    ice_nine (0.11.2)
+    macaddr (1.7.2)
+      systemu (~> 2.6.5)
+    rake (13.0.6)
+    ruby-kafka (1.5.0)
+      digest-crc
+    systemu (2.6.5)
+    uuid (2.3.9)
+      macaddr (~> 1.0)
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  dry-struct
+  ruby-kafka
+  uuid
+
+BUNDLED WITH
+   2.3.18
