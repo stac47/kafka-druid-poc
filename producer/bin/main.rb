@@ -19,6 +19,7 @@ module Types
 end
 
 class CheckEvent < Dry::Struct
+  attribute :timestamp, Types::Integer
   attribute :check_uuid, Types::String
   attribute :client_uuid, Types::String
   attribute :tat_ms, Types::Integer
@@ -45,6 +46,7 @@ producer = kafka.producer
 
 begin
   event = CheckEvent.new(
+    timestamp: Time.now.to_i,
     check_uuid: UUID.generate,
     client_uuid: clients.sample,
     tat_ms: 1000 * Random.rand(50),
