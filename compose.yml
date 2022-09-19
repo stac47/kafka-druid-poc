@@ -36,8 +36,8 @@ services:
   # Need 3.5 or later for container nodes
   zookeeper:
     image: zookeeper:3.8
-    # ports:
-    #   - "2182:2182"
+    ports:
+      - "2182:2181"
     environment:
       - ZOO_MY_ID=1
 
